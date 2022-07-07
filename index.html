@@ -36,6 +36,13 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script>
+      window.onbeforeunload = () => {
+        for(const form of document.getElementsByTagName('form')) {
+          form.reset();
+        }
+      }
+    </script>
   </head>
   <body>
     <header class="header">
@@ -252,11 +259,11 @@
               />
             </div>
             <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Yubter</h3>
+              <h3 class="projects__row-content-title">ROOTMYBOX Reporting System</h3>
               <p class="projects__row-content-desc">
-                Yubter is a platform that I created where people can join the
-                community of their favorite youtube channels and can be part of
-                the conversation.
+                RMB Reporting System is a reporting manaagement and parsing system that I created where the company 
+                can manage, import pentesting vulnerability and findings into the system and eventually parse it into
+                a report. 
               </p>
               <a class='btn btn--med btn--theme dynamicBgClr' href='/project-1' target='_blank'>Case Study</a
               >
@@ -272,11 +279,10 @@
               />
             </div>
             <div class="projects__row-content">
-              <h3 class="projects__row-content-title">Wilsonport</h3>
+              <h3 class="projects__row-content-title">Metapmate</h3>
               <p class="projects__row-content-desc">
-                Wilsonport is a multiservice logistics and transport company and
-                I created their website from scratch using the frontend tools I
-                know.
+                Metapmate is an dating platform that I have built for a client. The mobile application has all features of
+                a typical dating app, including in-app-subscription, notifications, and the list continues.
               </p>
               <a class='btn btn--med btn--theme dynamicBgClr' href='/project-2' target='_blank'>Case Study</a
               >
